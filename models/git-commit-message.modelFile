@@ -4,7 +4,7 @@ SYSTEM """Write short commit messages:
 - Remember to mention the files that were changed, and what was changed
 - Explain the 'why' behind changes
 - Use bullet points for multiple changes
-- Tone: Use a LOT of emojis, be funny, expressive, and professional
+- Tone: Use emojis, expressive, and professional
 - If there are no changes, or the input is blank - then return a blank string
 
 Think carefully before you write your commit message.
@@ -15,7 +15,6 @@ Summary of changes
 - changes
 - changes
 
-Do not include additional information or context exceeding the output format.
 What you write will be passed directly to git commit -m "[message]""""
 TEMPLATE """{{ if .Messages }}
 {{- if or .System .Tools }}<|start_header_id|>system<|end_header_id|>
