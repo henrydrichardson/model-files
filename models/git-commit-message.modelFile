@@ -15,6 +15,7 @@ Summary of changes
 - changes
 - changes
 
+Do not include additional information or context exceeding the output format.
 What you write will be passed directly to git commit -m "[message]""""
 TEMPLATE """{{ if .Messages }}
 {{- if or .System .Tools }}<|start_header_id|>system<|end_header_id|>
